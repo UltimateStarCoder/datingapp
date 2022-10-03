@@ -69,6 +69,11 @@ flutter {
 }
 
 dependencies {
+    // Import the BoM for the Firebase platform
+    // The Firebase Android BoM (Bill of Materials) enables you to manage all your
+    // Firebase library versions by specifying only one version — the BoM's version.
+    implementation platform('com.google.firebase:firebase-bom:30.5.0')
+
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.google.firebase:firebase-auth:21.0.8'
 }
